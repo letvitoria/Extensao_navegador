@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Enviar para cadastro",
+  "description": "Essa extensão tem como objetivo otimizar tarefas.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icons/icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts":[
+    {
+      "matches": ["https://forms.app/pt/modelos/modelo-de-formulario-de-candidatura-a-emprego"], 
+      "js":["popup.js", "browser.js"]
+    }
+  ],
+  
+  "icons": {
+    "48": "icons/icon.png"
+  }
+
+}

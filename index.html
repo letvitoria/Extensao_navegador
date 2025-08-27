@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviando PDF para Cadastro</title>
+    <script type="module" src="pdf.mjs"> </script>
+
+   
+</head>
+<body>
+    <h3>Selecione o arquivo PDF:</h3>
+        <div class="file-input-container">
+            <label class="file-input-label" for="pdfUpload">Procurar...</label>
+            <input type="file" id="pdfUpload" name="pdfFile" accept="application/pdf">
+            <span id="fileNameDisplay" ></span> <!--ffff-->
+        </div>
+        <div>
+            <button type="button" id="uploadButton">Enviar</button>
+        </div>
+    
+    <pre id="result" class="result-container"></pre>
+    <div>
+        <button id="preencherButton" type="submit" style="display: none;">Preencher</button>
+        <script>
+            function motrarBotao(){
+                document.getElementById("preencherButton").style.display = "block";
+            }
+        </script>
+    </div>
+    
+    <script src="popup.js" defer></script>
+</body>
+</html>
+<!--Quero que o botão preencherButton só apareça quando o botão oploadButton for clicado-->

@@ -1,0 +1,75 @@
+body{
+    width: 300px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    height: 40%;
+    max-height: 600px;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.file-input-container {
+    margin-bottom: 15px;
+    position: relative;
+}
+.file-input-label {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#pdfUpload {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#fileNameDisplay {
+    margin-left: 10px;
+    font-style: italic;
+
+}
+#uploadButton {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#uploadButton:hover {
+    background: #45a049;
+}
+
+#result {
+    margin-top: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    white-space: pre-wrap;
+}
+
+.result-item {
+    margin-bottom: 5px;
+}
+.result-key {
+    font-weight: bold;
+    margin-right: 5px;
+}
+#preencherButton {
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #e5f5fa;
+}
